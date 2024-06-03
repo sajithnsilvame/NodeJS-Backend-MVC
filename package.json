@@ -1,0 +1,35 @@
+{
+  "name": "node-backend-mvc",
+  "version": "1.0.0",
+  "description": "node backend server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.mjs",
+    "make:controller": "node config/scripts/makeController.mjs",
+    "make:model": "node config/scripts/makeModel.mjs",
+    "make:controller:model": "node config/scripts/makeControllerModel.mjs",
+    "make:middleware": "node config/scripts/makeMiddleware.mjs"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "sajith n silva",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "make-dir": "^4.0.0",
+    "mongoose": "^8.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "touch": "^3.1.0"
+  }
+}
